@@ -1,0 +1,58 @@
+#!/bin/sh
+
+# Use neovim for vim if present.
+[ -x "$(command -v nvim)" ] && alias vim="nvim" vimdiff="nvim -d"
+
+# Verbosity and settings that you pretty much just always are going to want.
+alias \
+	cp="cp -iv" \
+	mv="mv -iv" \
+	rm="rm -vI" \
+	mkd="mkdir -pv" \
+	yt="youtube-dl --add-metadata -i" \
+	yta="yt -x -f bestaudio/best" \
+	ffmpeg="ffmpeg -hide_banner"
+
+# Colorize commands when possible.
+alias \
+	ls="ls -hN --color=auto --group-directories-first" \
+	grep="grep --color=auto" \
+	diff="diff --color=auto" \
+	ccat="highlight --out-format=ansi"
+
+# These common commands are just too long! Abbreviate them.
+alias \
+	ka="killall" \
+	g="git" \
+	trem="transmission-remote" \
+	YT="youtube-viewer" \
+	sdn="sudo shutdown -h now" \
+	f="$FILE" \
+	e="$EDITOR" \
+	v="$EDITOR" \
+	p="sudo pacman" \
+	xi="sudo xbps-install" \
+	xr="sudo xbps-remove -R" \
+	xq="xbps-query" \
+	z="zathura"
+
+alias \
+	magit="nvim -c MagitOnly" \
+	ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/zshnameddirrc" \
+	weath="less -S ${XDG_DATA_HOME:-$HOME/.local/share}/weatherreport" \
+	tmux="tmux -f ${XDG_CONFIG_HOME:-$HOME/.config}/tmux/tmux.conf" \
+
+
+alias 414="cd ~/Desktop/15-414"
+alias 440="cd ~/Desktop/15-440"
+alias 319="cd ~/Desktop/15-319"
+alias 701="cd ~/Desktop/10-701"
+
+alias ethics="cd ~/Desktop/17-200"
+alias compilers="docker start 15411 && docker exec -it 15411 bash"
+alias grade="cd /home/mojojojo/Desktop/17-214/staff-repo/2020-2fall/admin/TA-scripts"
+alias double="~/.screenlayout/double.sh && ~/.local/bin/setbg && ~/.config/polybar/launch.sh"
+alias doble="~/.screenlayout/doble.sh && ~/.local/bin/setbg && ~/.config/polybar/launch.sh"
+alias single="~/.screenlayout/single.sh && ~/.local/bin/setbg && ~/.config/polybar/launch.sh"
+alias keys="setxkbmap -option && setxkbmap -option caps:swapescape"
+alias andrew="ssh joellexl@unix.andrew.cmu.edu"
