@@ -1,5 +1,5 @@
 ! Transparency (0-1):
-*.alpha: 0.8
+*.alpha: 0.82
 
 !! Set a default font and font size as below:
 /* *.font: monospace:size=10 */
@@ -157,7 +157,8 @@
 
 ! vim: set ft=xdefaults:
 
-*.color0:  #1e2132
+*.color0: #282828
+/* #1e2132 */
 *.color1:  #e27878
 *.color2:  #b4be82
 *.color3:  #e2a478

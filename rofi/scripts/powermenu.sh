@@ -9,10 +9,10 @@ rofi_command="rofi -theme themes/powermenu.rasi"
 uptime=$(uptime -p | sed -e 's/up //g')
 
 # Options
-shutdown="襤"
+shutdown=""
 reboot="ﰇ"
 lock=""
-suspend="鈴"
+suspend=""
 logout=""
 
 # Variable passed to rofi
@@ -38,4 +38,3 @@ case $chosen in
         openbox --exit
         ;;
 esac
-

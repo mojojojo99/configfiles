@@ -1,8 +1,8 @@
 * {
   accent:           #607d8b;
-  background:       #212121;
-  background-light: #272727;
-  foreground:       #bdbdbd;
+  background:       #2E3440;
+  background-light: #81A1C1;
+  foreground:       #D8DEE9;
   on:               #66bb6a;
   off:              #ef5350;
 }
